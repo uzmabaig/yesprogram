@@ -1,0 +1,1545 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400;1,500&display=swap");
+
+:root {
+  --theme-color: #b11f2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+.main-container .left-button-pannel .content-change-button ul li .active{
+  color: #fff;
+}
+.content-change {
+  display: none;
+}
+.content-change.active {
+  display: block;
+}
+.yes-program-image {
+    position: relative;
+}
+.yes-program-image .background{
+    background-attachment: fixed;
+    background-image: url(../images/Group\ 38.png);
+    background-size: cover;
+    height: 250px;
+}
+.yes-program-image .background h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    height: 250px;
+    overflow: hidden;
+}
+.main-container {
+    display: flex;
+    height: auto;
+    padding: 0px 100px 0px 100px;
+    gap: 10px;
+    margin: 30px 3px;
+}
+.left-button-pannel {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    padding: 20px 26px 20px 26px;
+}
+.left-button-pannel .title{
+    margin-top: 75px;
+}
+.left-button-pannel .guide-title{
+    margin-top: 30px;
+}
+.left-button-pannel .guide-title h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+.left-button-pannel .title h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+.left-button-pannel .content-change-button ul{
+    list-style: none;
+    padding: 5px 0px;
+}
+.left-button-pannel .content-change-button ul li{
+    padding: 14px 0px;
+}
+.left-button-pannel .content-change-button ul li button{
+    background-color: #E6AF10;
+    padding: 16px;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #323435;
+    width: 100%;
+    text-align: start;
+    outline: none;
+}
+.left-button-pannel .content-change-button ul li button:hover{
+    background-color: #323435;
+    color: #E6AF10;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button{
+    background-color: #b11f2d;
+    padding: 16px;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    text-align: start;
+    outline: none;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button:hover{
+    background-color: #E6AF10;
+    color: #323435;
+}
+.right-change-content {
+    flex: 3;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px; 
+    overflow: hidden;
+}
+.video-section,
+.support {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+}
+
+:root {
+    /* DEFAULT YOUTUBE VIDEO ASPECT RATIO */
+    --video-aspect-ratio: 16 / 9;
+    /* PLAYER CONTAINER STYLES*/
+    --player-font: Montserrat;
+    --player-background-color: rgba(255, 255, 255, 0.75);
+    --player-border-color: rgba(255, 255, 255, 0.75);
+    --player-border-width: 5px;
+    /* <-- 0 = no border */
+    /* PLAYLIST STYLES */
+    --playlist-background-color: rgba(255, 255, 255, 0.75);
+
+    /* PLAYER BUTTON WIDTH 
+      Sets aspect ratio width and height in scrolling playlist grid */
+    --playlist-button-width: 190px;
+    --playlist-button-mobile-width: 163px;
+
+    /* CAPTION STYLES */
+    --caption-container-padding: 15px;
+    /* <-- PADDING SETS CONTAINER HEIGHT*/
+    --caption-container-mobile-padding: 15px;
+    --caption-font-size: 20px;
+    --caption-font-mobile-size: 18px;
+    --caption-text-color: rgba(255, 255, 255, 1);
+    --caption-text-transform: uppercase;
+    /* <--  uppercase - lowercase- normal - etc.*/
+    --parent-container-max-width: 980px;
+    /* <-- PLAY WITH ME */
+}
+
+
+.parent-container {
+    width: 100%;
+}
+
+@media only screen and (max-width: 980px) {
+    .parent-container {
+        padding-top: 0;
+    }
+
+}
+
+#video-player {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--player-background-color);
+    padding: 10px 10px;
+}
+
+#video-player iframe {
+    aspect-ratio: var(--video-aspect-ratio);
+    width: 100% !important;
+    height: auto;
+    border-radius: 10px;
+}
+
+#video-caption {
+    font-family: var(--player-font);
+    color: var(--caption-text-color);
+    font-size: var(--caption-text-size);
+    letter-spacing: 2px;
+    text-transform: var(--caption-text-transform);
+    width: 100%;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: calc(var(--caption-container-padding) - 5px);
+    padding-bottom: var(--caption-container-padding);
+}
+
+
+@media only screen and (max-width: 980px) {
+    #video-caption {
+        letter-spacing: 0px;
+        padding-top: calc(var(--caption-container-mobile-padding) - 5px);
+        padding-bottom: var(--caption-container-mobile-padding);
+    }
+
+}
+
+#playlist::-webkit-scrollbar {
+    display: none;
+}
+
+#playlist {
+  background-color: var(--playlist-background-color);
+  overflow-x: hidden;
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(var(--playlist-button-width), 1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(var(--playlist-button-width), 1fr);
+  overflow-x: auto;
+}
+
+#playlist img {
+    width: 150px;
+    height: 84px;
+}
+
+@media only screen and (max-width: 980px) {
+    #playlist {
+        grid-auto-columns: minmax(var(--playlist-button-mobile-width), 1fr);
+        grid-template-columns: repeat(auto-fill,
+                minmax(var(--playlist-button-mobile-width), 1fr));
+    }
+}
+
+#playlist button {
+
+    aspect-ratio: var(--video-aspect-ratio);
+    width: var(--playlist-button-width);
+    font-family: var(--player-font);
+    font-size: var(--playlist-button-font-size);
+    color: var(--playlist-button-text-color);
+    text-transform: var(--playlist-button-text-transform);
+    overflow: hidden;
+    border: solid 2px var(--playlist-button-border-color);
+    filter: brightness(0.7);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    transition: all 300ms ease;
+    border-radius: 10px;
+}
+
+
+#playlist button:hover {
+    filter: brightness(1);
+    border: solid 2px var(--playlist-button-border-hover-color);
+}
+
+
+#playlist button:focus,
+#playlist button.active {
+    filter: brightness(1);
+    border: solid 2px var(--playlist-button-border-active-color);
+    cursor: none !important;
+}
+
+#playlist button:active {
+    transform: scale(0.95);
+}
+
+
+@media only screen and (max-width: 979px) {
+    #playlist button {
+        width: var(--playlist-button-mobile-width);
+        font-size: var(--playlist-button-mobile-font-size);
+        padding-top: calc(var(--caption-container-mobile-padding) - 5px);
+        padding-bottom: var(--caption-container-mobile-padding);
+        font-size: var(--caption-font-mobile-size);
+        letter-spacing: 0px;
+    }
+
+}
+/* Styles for small devices (up to 599px) */
+@media (max-width: 460px) {
+.left-button-pannel{
+  display: none;
+}
+  .yes-program-image{
+    display: none;
+  }
+  .mobile-section .slider-container{
+      width: 100%;
+      overflow-x: hidden;
+      white-space: nowrap;
+      padding: 8px;
+      background-color: #323435;
+      margin-top: 85px;
+  }
+  .mobile-section .slider-container .slider-button {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+  .mobile-section .slider-container .slider-button button{
+    padding: 7px 6px;
+    margin-right: 10px;
+    border-radius: 6px;
+    background-color: #E6AF10;
+    border: none;
+    color: #323435;
+    font-size: 10px;
+    font-weight: 500;
+}
+.main-container {
+  display: flex;
+  height: auto;
+  padding: 0px 15px 0px 15px;
+  gap: 10px;
+  margin: 30px 0px;
+}
+.right-change-content {
+    flex: 3;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px; 
+    overflow: hidden;
+}
+#video-player {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--player-background-color);
+    padding: 10px 10px 10px 10px;
+}
+
+#playlist {
+    background-color: var(--playlist-background-color);
+    overflow: scroll-x;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill,
+            minmax(var(--playlist-button-width), 1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(var(--playlist-button-width), 1fr);
+    overflow-x: auto;
+
+}
+#playlist button {
+  width: 175px;
+  font-size: var(--playlist-button-mobile-font-size);
+  padding-top: calc(var(--caption-container-mobile-padding) - 5px);
+  padding-bottom: var(--caption-container-mobile-padding);
+  font-size: 10px;
+  letter-spacing: 0px;
+}
+
+#video-player iframe {
+    aspect-ratio: var(--video-aspect-ratio);
+    width: 100% !important;
+    height: auto !important;
+}
+
+.slider-button:hover {
+    transform: translateX(-10px);
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 18px 17px 18px;
+    gap: 20px;
+    border-radius: 10px;
+}
+}
+
+/* Styles for medium devices (600px to 767px) */
+@media (min-width: 461px) and (max-width: 767px) {
+  .left-button-pannel{
+    display: none;
+  }
+  .yes-program-image{
+    display: none;
+  }
+  .slider-container {
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    padding: 15px;
+    background-color: #323435;
+    margin-top: 95px;
+}
+
+.slider-button {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.slider-button  button{
+    padding: 9px 21px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #E6AF10;
+    border: none;
+    color: #323435;
+
+}
+.main-container {
+  display: flex;
+  height: auto;
+  padding: 0px 15px 0px 15px;
+  gap: 10px;
+  margin: 30px 0px;
+}
+.right-change-content {
+    flex: 3;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px; 
+    overflow: hidden;
+}
+#video-player {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--player-background-color);
+    padding: 10px 10px 10px 10px;
+}
+
+#playlist {
+    background-color: var(--playlist-background-color);
+    overflow: scroll-x;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill,
+            minmax(var(--playlist-button-width), 1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(var(--playlist-button-width), 1fr);
+    overflow-x: auto;
+
+}
+#playlist button {
+  width: 175px;
+  font-size: var(--playlist-button-mobile-font-size);
+  padding-top: calc(var(--caption-container-mobile-padding) - 5px);
+  padding-bottom: var(--caption-container-mobile-padding);
+  font-size: 10px;
+  letter-spacing: 0px;
+}
+
+#video-player iframe {
+    aspect-ratio: var(--video-aspect-ratio);
+    width: 100% !important;
+    height: auto !important;
+}
+
+.slider-button:hover {
+    transform: translateX(-10px);
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 18px 17px 18px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 799px){
+  .yes-program-image {
+    position: relative;
+}
+.yes-program-image .background{
+    background-attachment: fixed;
+    background-image: url(../images/Group\ 38.png);
+    background-size: cover;
+    height: 250px;
+}
+.yes-program-image .background h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    height: 250px;
+    overflow: hidden;
+}
+.main-container {
+  display: flex;
+  height: auto;
+  padding: 0px 60px 0px 60px;
+  gap: 20px;
+}
+.left-button-pannel {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    padding: 20px 26px 20px 26px; /* Adjust values as needed */
+}
+.left-button-pannel .title{
+    margin-top: 45px;
+}
+.left-button-pannel .title h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.left-button-pannel .content-change-button ul{
+    list-style: none;
+    padding: 5px 0px;
+}
+.left-button-pannel .content-change-button ul li{
+    padding: 7px 0px;
+}
+.left-button-pannel .content-change-button ul li button{
+  background-color: #E6AF10;
+  padding: 12px;
+  border: none;
+  font-size: 10px;
+  font-weight: 500;
+  color: #323435;
+  width: 100%;
+  text-align: start;
+  outline: none;
+}
+.left-button-pannel .content-change-button ul li button:hover{
+    background-color: #323435;
+    color: #E6AF10;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button{
+    background-color: #b11f2d;
+    padding: 12px;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    text-align: start;
+    outline: none;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button:hover{
+    background-color: #E6AF10;
+    color: #323435;
+}
+.right-change-content {
+    flex: 3;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px; 
+    overflow: hidden;
+}
+.right-change-content h6{
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #323435;
+  padding: 20px 20px;
+  position: relative;
+  line-height: 25px;
+}
+.right-change-content h6::after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(to right, #B11F2D 70%, #E6AF10 50%);
+        top: 90%;
+        left: 0;
+        width: 110%;
+        height: 5px;
+}
+.right-change-content h1{
+    color: #B11F2D;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: end;
+    padding: 0px 25px;
+}
+/* introduction start */
+.right-change-content .card-content-change{
+    padding: 10px 20px;
+}
+.right-change-content .card-content-change h4{
+    color: #323435;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.right-change-content .card-content-change p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: justify;
+}
+/* introduction END */
+/* eligibility criteria start */
+.right-change-content .card-content-change2{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change2 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+
+}
+.right-change-content .card-content-change2 .bullet-points{
+  padding: 0px 20px;
+}
+.right-change-content .card-content-change2 .bullet-points ul li p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: justify;
+  margin: 3px;
+}
+.right-change-content .card-content-change2 .bullet-points h3{
+  color: #323435;
+  font-weight: 500;
+  font-size: 11px;
+  text-align: justify;
+}
+/* eligibility criteria end */
+/* age calculator start */
+.right-change-content .card-content-change3{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change3 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change3 .age-calculator-container{
+  max-width: 1000px;
+  margin: 9px auto;
+  padding: 18px 20px 2px 30px;
+  background-color: #323435;
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change3 .age-calculator-container h2{
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 500;
+}
+.right-change-content .card-content-change3 .age-calculator-container input{
+  padding: 12px 0px 11px 8px;
+  height: 42%;
+  border: none;
+  outline: none;
+  font-size: 11px;
+}
+.right-change-content .card-content-change3 .age-calculator-container input::placeholder{
+  font-size: 15px;
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn{
+  padding: 12px 0px 12px 0px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323435;
+  font-weight: 500;
+  margin: 0 auto;
+  font-size: 11px;
+
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn:hover{
+  text-decoration: none;
+}
+.right-change-content .card-content-change3 .age-calculator-container i{
+  position: absolute;
+  top: 26%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+  font-size: 14px;
+}
+.right-change-content .card-content-change3 .age-calculator-container p{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+.right-change-content .card-content-change3 .age-calculator-container p span{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* age calculator end */
+/* application selection start */
+.right-change-content .card-content-change4{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change4 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change4 .question-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 10px;
+  border-radius: 0px;;
+}
+.right-change-content .card-content-change4 .question-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change4 .question-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+.right-change-content .card-content-change4 .question-section .card-body p span{
+  color: #323435;
+  font-size: 17px;
+  font-weight: 600;
+}
+.right-change-content .card-content-change4 .important-note p{
+  color: #323435;
+  font-weight: 500;
+  font-size: 11px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change4 .important-note p span{
+  font-size: 13px;
+  color: #B11F2D;
+  font-weight: 600;
+}
+/* application selection end */
+/* parent student start */
+.right-change-content .card-content-change5{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change5 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change5 p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;;
+}
+.right-change-content .card-content-change5 button{
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  padding: 14px 11px 14px 14px;
+  text-align: center;
+  width: 27%;
+  border-radius: 16px;
+  font-weight: 300;
+  font-size: 11px;
+  outline: none;
+  border: none;
+  background-color: #323435;
+  transition-duration: 1s;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 button:hover{
+  background-color: #B11F2D;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+/* parent student end */
+/* faqs start */
+.right-change-content .card-content-change6{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change6 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change6 h5{
+    color: #B11F2D;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 0px 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+}
+
+@media (min-width: 800px) and (max-width: 921px){
+  .mobile-section{
+    display: none;
+  }
+  .mobile-main-section{
+    display: none;
+  }
+  .yes-program-image {
+    position: relative;
+}
+.yes-program-image .background{
+    background-attachment: fixed;
+    background-image: url(../images/Group\ 38.png);
+    background-size: cover;
+    height: 250px;
+}
+.yes-program-image .background h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    height: 250px;
+    overflow: hidden;
+}
+.main-container {
+  display: flex;
+  height: auto;
+  padding: 0px 60px 0px 60px;
+  gap: 20px;
+}
+.left-button-pannel {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    padding: 20px 26px 20px 26px; /* Adjust values as needed */
+}
+
+.left-button-pannel .title{
+    margin-top: 45px;
+}
+.left-button-pannel .title h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.left-button-pannel .content-change-button ul{
+    list-style: none;
+    padding: 5px 0px;
+}
+.left-button-pannel .content-change-button ul li{
+    padding: 7px 0px;
+}
+.left-button-pannel .content-change-button ul li button{
+  background-color: #E6AF10;
+  padding: 12px;
+  border: none;
+  font-size: 10px;
+  font-weight: 500;
+  color: #323435;
+  width: 100%;
+  text-align: start;
+  outline: none;
+}
+.left-button-pannel .content-change-button ul li button:hover{
+    background-color: #323435;
+    color: #E6AF10;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button{
+    background-color: #b11f2d;
+    padding: 12px;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    text-align: start;
+    outline: none;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button:hover{
+    background-color: #E6AF10;
+    color: #323435;
+}
+.right-change-content {
+    flex: 3;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px; 
+    overflow: hidden;
+}
+.right-change-content h6{
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #323435;
+  padding: 20px 20px;
+  position: relative;
+  line-height: 25px;
+}
+.right-change-content h6::after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(to right, #B11F2D 70%, #E6AF10 50%);
+        top: 90%;
+        left: 0;
+        width: 110%;
+        height: 5px;
+}
+.right-change-content h1{
+    color: #B11F2D;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: end;
+    padding: 0px 25px;
+}
+/* introduction start */
+.right-change-content .card-content-change{
+    padding: 10px 20px;
+}
+.right-change-content .card-content-change h4{
+    color: #323435;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.right-change-content .card-content-change p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: justify;
+}
+/* introduction END */
+/* eligibility criteria start */
+.right-change-content .card-content-change2{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change2 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+
+}
+.right-change-content .card-content-change2 .bullet-points{
+  padding: 0px 20px;
+}
+.right-change-content .card-content-change2 .bullet-points ul li p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: justify;
+}
+.right-change-content .card-content-change2 .bullet-points h3{
+  color: #323435;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: justify;
+}
+/* eligibility criteria end */
+/* age calculator start */
+.right-change-content .card-content-change3{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change3 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change3 .age-calculator-container{
+  max-width: 1000px;
+  margin: 9px auto;
+  padding: 18px 20px 2px 30px;
+  background-color: #323435;
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change3 .age-calculator-container h2{
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.right-change-content .card-content-change3 .age-calculator-container input{
+  padding: 12px 2px 11px 12px;
+  height: 42%;
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+.right-change-content .card-content-change3 .age-calculator-container input::placeholder{
+  font-size: 15px;
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn{
+  padding: 12px 0px 12px 0px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323435;
+  font-weight: 500;
+  margin: 0 auto;
+  font-size: 11px;
+
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn:hover{
+  text-decoration: none;
+}
+.right-change-content .card-content-change3 .age-calculator-container i{
+  position: absolute;
+  top: 26%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+}
+.right-change-content .card-content-change3 .age-calculator-container p{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+.right-change-content .card-content-change3 .age-calculator-container p span{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* age calculator end */
+/* application selection start */
+.right-change-content .card-content-change4{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change4 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change4 .question-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change4 .question-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change4 .question-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+.right-change-content .card-content-change4 .question-section .card-body p span{
+  color: #323435;
+  font-size: 17px;
+  font-weight: 600;
+}
+.right-change-content .card-content-change4 .important-note p{
+  color: #323435;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change4 .important-note p span{
+  font-size: 15px;
+  color: #B11F2D;
+  font-weight: 600;
+}
+/* application selection end */
+/* parent student start */
+.right-change-content .card-content-change5{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change5 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;;
+}
+.right-change-content .card-content-change5 button{
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  padding: 14px 11px 14px 14px;
+  text-align: center;
+  width: 27%;
+  border-radius: 16px;
+  font-weight: 300;
+  font-size: 11px;
+  outline: none;
+  border: none;
+  background-color: #323435;
+  transition-duration: 1s;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 button:hover{
+  background-color: #B11F2D;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+/* parent student end */
+/* faqs start */
+.right-change-content .card-content-change6{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change6 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change6 h5{
+    color: #B11F2D;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 0px 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+}
+
+/* Styles for large devices (768px to 991px) */
+@media (min-width: 920px) and (max-width: 991px) {
+.yes-program-image .background{
+    background-attachment: fixed;
+    background-image: url(../images/Group\ 38.png);
+    background-size: cover;
+    height: 250px;
+}
+.yes-program-image .background h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    height: 250px;
+    overflow: hidden;
+}
+.main-container {
+  display: flex;
+  height: auto;
+  padding: 0px 60px 0px 60px;
+  gap: 20px;
+}
+.left-button-pannel {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    padding: 20px 26px 20px 26px; /* Adjust values as needed */
+}
+.left-button-pannel .title{
+    margin-top: 45px;
+}
+.left-button-pannel .title h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.left-button-pannel .content-change-button ul{
+    list-style: none;
+    padding: 5px 0px;
+}
+.left-button-pannel .content-change-button ul li{
+    padding: 7px 0px;
+}
+.left-button-pannel .content-change-button ul li button{
+  background-color: #E6AF10;
+  padding: 12px;
+  border: none;
+  font-size: 10px;
+  font-weight: 500;
+  color: #323435;
+  width: 100%;
+  text-align: start;
+  outline: none;
+}
+.left-button-pannel .content-change-button ul li button:hover{
+    background-color: #323435;
+    color: #E6AF10;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button{
+    background-color: #b11f2d;
+    padding: 12px;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    text-align: start;
+    outline: none;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button:hover{
+    background-color: #E6AF10;
+    color: #323435;
+}
+.right-change-content {
+    flex: 3;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px; 
+    overflow: hidden;
+}
+.right-change-content h6{
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #323435;
+  padding: 20px 50px;
+  position: relative;
+  line-height: 25px;
+}
+.right-change-content h6::after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(to right, #B11F2D 70%, #E6AF10 50%);
+        top: 90%;
+        left: 0;
+        width: 110%;
+        height: 5px;
+}
+.right-change-content h1{
+    color: #B11F2D;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: end;
+    padding: 0px 25px;
+}
+/* introduction start */
+.right-change-content .card-content-change{
+    padding: 10px 50px;
+}
+.right-change-content .card-content-change h4{
+    color: #323435;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.right-change-content .card-content-change p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: justify;
+}
+/* introduction END */
+/* eligibility criteria start */
+.right-change-content .card-content-change2{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change2 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change2 .bullet-points{
+  padding: 0px 20px;
+}
+.right-change-content .card-content-change2 .bullet-points ul li p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: justify;
+}
+.right-change-content .card-content-change2 .bullet-points h3{
+  color: #323435;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: justify;
+}
+/* eligibility criteria end */
+/* age calculator start */
+.right-change-content .card-content-change3{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change3 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change3 .age-calculator-container{
+  max-width: 1000px;
+  margin: 9px auto;
+  padding: 18px 40px 2px 60px;
+  background-color: #323435;
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change3 .age-calculator-container h2{
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+}
+.right-change-content .card-content-change3 .age-calculator-container input{
+  padding: 12px 2px 11px 20px;
+  height: 42%;
+  border: none;
+  outline: none;
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn{
+  padding: 12px 0px 12px 0px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323435;
+  font-weight: 500;
+  margin: 0 auto;
+  font-size: 13px;
+
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn:hover{
+  text-decoration: none;
+}
+.right-change-content .card-content-change3 .age-calculator-container i{
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+}
+.right-change-content .card-content-change3 .age-calculator-container p{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+}
+.right-change-content .card-content-change3 .age-calculator-container p span{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 500;
+}
+/* age calculator end */
+/* application selection start */
+.right-change-content .card-content-change4{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change4 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change4 .question-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change4 .question-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change4 .question-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+.right-change-content .card-content-change4 .question-section .card-body p span{
+  color: #323435;
+  font-size: 17px;
+  font-weight: 600;
+}
+.right-change-content .card-content-change4 .important-note p{
+  color: #323435;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change4 .important-note p span{
+  font-size: 15px;
+  color: #B11F2D;
+  font-weight: 600;
+}
+/* application selection end */
+/* parent student start */
+.right-change-content .card-content-change5{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change5 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;;
+}
+.right-change-content .card-content-change5 button{
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  padding: 14px 11px 14px 14px;
+  text-align: center;
+  width: 21%;
+  border-radius: 16px;
+  font-weight: 300;
+  font-size: 10px;
+  outline: none;
+  border: none;
+  background-color: #323435;
+  transition-duration: 1s;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 button:hover{
+  background-color: #B11F2D;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+/* parent student end */
+/* faqs start */
+.right-change-content .card-content-change6{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change6 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change6 h5{
+    color: #B11F2D;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 0px 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+}
+
+/* Styles for extra large devices (992px and up) */
+@media (min-width: 992px) {
+  .mobile-section{
+    display: none;
+  }
+  .mobile-main-section{
+    display: none;
+  }
+}

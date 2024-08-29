@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400;1,500&display=swap');
+
+:root {
+    --theme-color: #B11F2D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+.background {
+    background-image: url('../images/contact.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+}
+
+.contact-form {
+    background: #EFEFEF;
+    padding: 75px 75px 40px 129px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 14px 8px -24px inset, rgba(0, 0, 0, 0.3) 0px 18px 16px -18px inset;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 185px;
+}
+.form-button{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.contact-form button {
+    padding: 15px 20px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.contact-form button:hover {
+    background-color: #e0a800;
+}
+/* Styles for small devices (up to 599px) */
+@media (max-width: 460px) {
+.background {
+    background-attachment: fixed;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 249px;
+    width: 100%;
+}
+.contact-form {
+    background: #EFEFEF;
+    padding: 59px 20px 34px 20px;
+    border-radius: 5px;
+    box-shadow: rgb(89 84 84 / 35%) 24px 20px 11px;
+}
+.contact-form label {
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 13px;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 42px;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #ffc107;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    font-size: 13px;
+    padding: 10px 76px;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #e0a800;
+}
+}
+
+/* Styles for medium devices (600px to 767px) */
+@media (min-width: 461px) and (max-width: 767px) {
+.background {
+    background-attachment: fixed;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 360px;
+    width: 100%;
+}  
+.contact-form button{
+    background-color: #ffc107;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    font-size: 13px;
+    padding: 10px 76px;
+    width: 100%;
+}
+}
+
+/* Styles for large devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .center-image img{
+        display: none;
+    }
+    .mobile-cards-section{
+        display: none;
+    }
+    .button-icon-section{
+        display: none;
+    }
+    .brand-image{
+        display: none;
+
+    }
+    .sidebar {
+        display: none;
+    }
+    .middle-header img{
+        width: 100px;
+    }
+    .circle-image{
+        width: 100%;  
+        margin-top: 40px;      
+    }
+    .circle-image .img-fluid2{
+        width: 100%;       
+    }
+    .top-bar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f8f9fa;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .contact-info span {
+        margin-right: 6px;
+        color: #B11F2D;
+        cursor: pointer;
+        font-size: 11px;
+    }
+    
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .btn {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    .how-to-apply {
+        background-color: #B11F2D;
+        font-size: 9px;
+    }
+    
+    .check-status {
+        background-color: #B11F2D;
+        font-size: 9px;
+    }
+    
+    .apply-now {
+        background-color: #B11F2D;
+        font-size: 9px;
+    }
+    .contact-container img{
+        object-fit: cover;
+        height: 300px;
+    }
+    .contact-form {
+        background: #EFEFEF;
+        padding: 59px 31px 34px 34px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* width: 500px; */
+    }
+    .contact-form label {
+        margin-bottom: 5px;
+        color: #333;
+    }
+    
+    .contact-form input, .contact-form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        height: 50px;
+        font-size: 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .contact-form textarea {
+        resize: vertical;
+        height: 150px;
+    }
+    
+    .contact-form button {
+        padding: 10px 20px;
+        background-color: #ffc107;
+        border: none;
+        border-radius: 10px;
+        color: #333;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .contact-form button:hover {
+        background-color: #e0a800;
+    }
+}
+
+/* Styles for extra large devices (992px and up) */
+@media (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+    .center-image img{
+        display: none;
+    }
+    .mobile-cards-section{
+        display: none;
+    }
+    .button-icon-section{
+        display: none;
+    }
+    .brand-image{
+        display: none;
+
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+
+

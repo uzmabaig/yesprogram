@@ -1,0 +1,344 @@
+.footer{
+    background-color: #B11F2D;
+    padding: 20px 100px;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    color: white;
+    margin: 30px 0px;
+}
+
+.footer-section {
+    padding: 10px;
+}
+
+.footer-section .logo img {
+   max-width: 50px;
+}
+
+.footer-section p {
+    margin: 10px 0px 0px 0px;
+    font-weight: 400;
+  
+}
+.footer-section a {
+    text-decoration: underline;
+    color: white;
+}
+
+
+
+.info h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.info li {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.info li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.info li a:hover {
+    text-decoration: underline;
+}
+
+.learn-more h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+}
+address a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+address a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-copyright{
+    width: 100%;
+}
+.footer-copyright p{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+}
+@media (max-width: 460px) {
+    .footer{
+        background-color: #B11F2D;
+        padding: 20px 15px;
+    }
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr ;
+        color: white;
+    }
+    
+    .footer-section {
+        padding: 10px;
+    }
+    
+    .footer-section.logo img {
+       max-width: 150px;
+    }
+    
+    .footer-section p {
+        margin: 10px 0px 0px 0px;
+        font-weight: 300;
+        font-size: 13px;
+    }
+    
+    .info h3 {
+          margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    }
+    
+    .info li {
+        margin-bottom: 5px;
+        list-style: none;
+    }
+    
+    .info li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 13px;
+    }
+    
+    .info li a:hover {
+        text-decoration: underline;
+    }
+    
+    .learn-more h3{
+          margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    }
+   
+    
+    address {
+        font-style: normal;
+        line-height: 1.6;
+    }
+    address a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 13px;
+    }
+    .footer-copyright{
+        width: 100%;
+    }
+    .footer-copyright p{
+        text-align: center;
+        color: #fff;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 767px){
+    .footer{
+        background-color: #B11F2D;
+        padding: 20px 75px;
+    }
+    .footer-content {
+        display: grid;
+        grid-template-columns: 2fr ;
+        color: white;
+    }
+    
+    .footer-section {
+        padding: 10px;
+    }
+    
+    .footer-section.logo img {
+       max-width: 150px;
+    }
+    
+    .footer-section p {
+        margin: 10px 0px 0px 0px;
+        font-weight: 300;
+    }
+    
+    .info h3 {
+          margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    }
+    
+    .info li {
+        margin-bottom: 5px;
+        list-style: none;
+    }
+    
+    .info li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .info li a:hover {
+        text-decoration: underline;
+    }
+    
+    .learn-more h3{
+         margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    }
+   
+    
+    address {
+        font-style: normal;
+        line-height: 1.6;
+    }
+    address a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    .footer-copyright{
+        width: 100%;
+    }
+    .footer-copyright p{
+        text-align: center;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 1145px) and (max-width: 1260px){
+    .footer-section p {
+        margin: 10px 0px 0px 0px;
+        font-weight: 300;
+    }
+    
+    .info h3 {
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    
+    .info li {
+        margin-bottom: 5px;
+        list-style: none;
+    }
+    
+    .info li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .info li a:hover {
+        text-decoration: underline;
+    }
+    
+    .learn-more h3 {
+          margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    }
+        
+    address {
+        font-style: normal;
+        line-height: 1.6;
+    }
+    address a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer-copyright{
+        width: 100%;
+    }
+    .footer-copyright p{
+        text-align: center;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .footer-section.logo img {
+        max-width: 130px;
+    }
+    .footer-section p {
+        margin: 10px 0px 0px 0px;
+        font-weight: 300;
+        font-size: 13px;
+    }
+    .learn-more {
+         margin-bottom: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    }
+    .info h3 {
+        margin-bottom: 10px;
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    .info li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 11px;
+    }
+    address {
+        font-style: normal;
+        line-height: 1.6;
+        font-size: 11px;
+    }
+    address a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 10px;
+    }
+    .footer-copyright p {
+        text-align: center;
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 11px;
+    }
+}
