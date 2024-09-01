@@ -15,37 +15,35 @@ body {
 .circle-image {
     overflow: hidden;
     position: relative;
+    
 }
 .container h5 {
-   font-weight: 700;
+    font-weight: 800;
     margin-bottom: 18px;
-    font-size: 40px;
+    font-size: 37px;
     margin-top: 29px;
     line-height: 47px;
-    text-align: center;
 }
 
 .container p {
-   font-size: 20px;
+    font-size: 18px;
     margin-bottom: 50px;
     padding: 0px 80px;
-    text-align: center;
 }
 .container .button{
-    background-color: #333;
-    padding: 10px 10px 10px 10px;
+ 
     background-color: #333;
     padding: 13px 31px 16px 32px;
     border-radius: 15px;
     color: #fff;
     text-decoration: none;
     transition: 1s;
+
 }
 .container .button:hover{
     background-color: #B11F2D;
     transition: 1s;
     letter-spacing: 1px;
-    border-color: #B11F2D;
 }
 
 .disclaimer {
@@ -55,13 +53,19 @@ body {
 }
 
 .title-card {
-    text-align: center;
     font-size: 2rem;
     color: #323435;
     font-weight: 400;
     margin-bottom: 40px;
+    text-align: center;
 }
-
+.card-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
 
 .going-card {
     background-color: var(--theme-color);
@@ -98,16 +102,14 @@ body {
 }
 
 .disclaimer-container h3 {
-    text-align: center;
     font-size: 27px;
     margin-bottom: 15px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
 
 }
 
 .disclaimer-container p {
-    text-align: center;
     font-size: 18px;
     text-align: center;
     margin-bottom: 0;

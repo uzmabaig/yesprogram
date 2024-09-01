@@ -86,7 +86,7 @@ body {
     color: #B11F2D;
     font-size: 29px;
     font-weight: 700;
-    padding-left: 75px;
+    /* padding-left: 10px; */
 }
 .about-container p{
     color: #333;
@@ -99,12 +99,12 @@ body {
     color: #333;
     letter-spacing: 2px;
     font-size: 18px;
-    padding-left: 35px;
+    padding-left: 55px;
 
 }
 .about-container a{
     text-decoration: none;
-   
+  
 }
 .about-container img{
     width: 120px;
