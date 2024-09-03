@@ -1,13 +1,11 @@
 @extends("layouts.app")
 @push('styles')
       <link href="{{asset('css\media.css')}}" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
 @endpush
-@push('scripts')
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="{{asset('js\media.js')}}"></script>
-    <script src="{{asset('js\slidebutton.js')}}"></script>
-@endpush
+
 @section('content')
+
 <div class="main-container">
     <div class="left-button-pannel">
         <div class="title">
@@ -72,6 +70,18 @@
         </div>
     </div>
 </div>
-
+@push('scripts')
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="{{asset('js\media.js')}}"></script>
+    <script src="{{asset('js\slidebutton.js')}}"></script>
+    <script src="{{asset('js\main.js')}}"></script>
+    <script src="{{asset('js\nav.js')}}"></script>
+@endpush
 @endsection
+
+       
+@section('title')
+media
+@endsection
+
 

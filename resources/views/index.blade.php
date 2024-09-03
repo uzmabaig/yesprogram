@@ -1,14 +1,23 @@
 @extends("layouts.app")
 @push('styles')
 <link href="{{asset('css\style.css')}}" rel="stylesheet">
+<style>
+   .going-card {
+        transition: 1s;
+    }
+    #card-left, #card-right {
+        opacity: 0;
+    }
+    #card-left {
+        transform: translateX(-100%);
+    }
+    #card-right {
+        transform: translateX(100%);
+    }
+</style>
 @endpush
-@push('scripts')
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-   <script src="js/carousel.js"></script>
-   <script src="js/animation.js"></script>
-   <script src="js/cardanimation.js"></script>
-   @endpush 
+
+
 @section('content')
 <section class="text-center mt-3 banner-container">
    <div class="container">
@@ -70,26 +79,6 @@
             </div>
          </div>
       </div>
-      <div class="row card-box mt-3">
-         <div class="col-md-4">
-            <div class="going-card2">
-               <h4>117</h4>
-               <p>Total Number of Cities</p>
-            </div>
-         </div>
-         <div class="col-md-4">
-            <div class="going-card2">
-               <h4>1453</h4>
-               <p>Total Number of Alumni</p>
-            </div>
-         </div>
-         <div class="col-md-4">
-            <div class="going-card2">
-               <h4>22</h4>
-               <p>Total Number of Years</p>
-            </div>
-         </div>
-      </div>
    </div>
 </section>
 <section class="disclaimer">
@@ -102,14 +91,54 @@
       </div>
    </section>
    
-   
+   @push('scripts')
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="{{asset('js\nav.js')}}"></script>
+   <script src="{{asset('js\carousel.js')}}"></script>
+   <script src="{{asset('js\animation.js')}}"></script>
+   <script src="{{asset('js\cardanimation.js')}}"></script>
+   <script>
+      gsap.registerPlugin(ScrollTrigger);
+         
+         gsap.to("#card-left", {
+             x: 10,
+             opacity: 1,
+             scrollTrigger: {
+                 trigger: "#card-left",
+                 start: "top center",
+                 end: "bottom center",
+                 scrub: true,
+                 markers: false,
+                         toggleActions: "play none none reverse"
+             }
+         });
+         
+         gsap.to("#card-right", {
+             x: -10,
+             opacity: 1,
+             scrollTrigger: {
+                 trigger: "#card-right",
+                 start: "top center",
+                 end: "bottom center",
+                 scrub: true,
+                 markers: false
+             }
+         });
+         
+         </script>
+   @endpush 
+ 
    @endsection
+       
    @section('title')
    home
    @endsection
+  
+  
    
-   
-   
+  
   
    
    
