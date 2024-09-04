@@ -36,32 +36,34 @@
         <div class="video-section">
             <div class="parent-container">
                 <aside id="video-player">
-                    <iframe src="https://www.youtube.com/embed/11IFEuvue8M?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=1&start=0&end=0"></iframe>
+                    <iframe id="YouTube-Iframe"  src="https://www.youtube.com/embed/ggB7ds1DA54?si=grlOA-6qOb_3GvWE" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </aside>
             </div>
             <div id="playlist">
                 <button class="lazyload active" data-bg="//img.youtube.com/vi/ggB7ds1DA54/sddefault.jpg"
-                data-iframe="https://www.youtube.com/embed/11IFEuvue8M?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=1&start=0&end=0"
+                data-iframe ="https://www.youtube.com/embed/ggB7ds1DA54?si=grlOA-6qOb_3GvWE?autoplay=1" 
                 data-caption="Chapal Hart ♩ American Pride"
                 style="background-image: url('//img.youtube.com/vi/ggB7ds1DA54/sddefault.jpg');"></button>
-            
+
                 <button class="lazyload" data-bg="//img.youtube.com/vi/gwRDaCooyiY/sddefault.jpg"
-                    data-iframe="https://www.youtube.com/embed/11IFEuvue8M?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=1&start=0&end=0"
+                    data-iframe="https://www.youtube.com/watch?v=gwRDaCooyiY?autoplay=1"
                     data-caption="Jon Batiste ♩ FREEDOM"
                     style="background-image: url('//img.youtube.com/vi/gwRDaCooyiY/sddefault.jpg');"></button>
 
                 <button class="lazyload" data-bg="//img.youtube.com/vi/FQ4m4n7D0xQ/sddefault.jpg"
-                    data-iframe="https://www.youtube.com/embed/11IFEuvue8M?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=1&start=0&end=0"
+                    data-iframe="https://www.youtube.com/watch?v=FQ4m4n7D0xQ?autoplay=1"
                     data-caption="Luke James ♩ SHINE ON"
                     style="background-image: url('//img.youtube.com/vi/FQ4m4n7D0xQ/sddefault.jpg');"></button>
 
-                    <button class="lazyload" data-bg="//img.youtube.com/vi/9WbXZz01ruY/sddefault.jpg"
-                    data-iframe="https://www.youtube.com/embed/11IFEuvue8M?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=1&start=0&end=0"
+                <button class="lazyload" data-bg="//img.youtube.com/vi/9WbXZz01ruY/sddefault.jpg"
+                    data-iframe="https://www.youtube.com/watch?v=9WbXZz01ruY?autoplay=1"
                     data-caption="Luke James ♩ SHINE ON"
                     style="background-image: url('//img.youtube.com/vi/9WbXZz01ruY/sddefault.jpg');"></button>
 
                 <button class="lazyload" data-bg="//img.youtube.com/vi/sJ7YTX-oPwE/sddefault.jpg"
-                    data-iframe="https://www.youtube.com/embed/11IFEuvue8M?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=1&start=0&end=0"
+                    data-iframe="https://www.youtube.com/embed/ggB7ds1DA54?si=grlOA-6qOb_3GvWE?autoplay=1"
                     data-caption="Shamarr Allen ♩ Dance with Me"
                     style="background-image: url('//img.youtube.com/vi/sJ7YTX-oPwE/sddefault.jpg');"></button>
 

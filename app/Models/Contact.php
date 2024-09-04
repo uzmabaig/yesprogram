@@ -3,14 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticate;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticate
+class Contact extends Model
 {
     use HasFactory;
     protected $fillable = [];
     protected $guarded =  [];
-
- 
-
 }

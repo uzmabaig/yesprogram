@@ -28,7 +28,7 @@
     </div>
     <nav>
         <ul>
-            <li><a href="/" class="active">Home</a></li>
+            <li><a href="{{route('index')}}" class="active">Home</a></li>
             <li><a href="{{route('yesprogram')}}">YES Program</a></li>
             <li><a href="{{route('media')}}">Media</a></li>
             <li><a href="{{route('about')}}">About Us</a></li>
