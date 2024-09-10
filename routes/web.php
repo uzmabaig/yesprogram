@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('register');
   });
-  Route::match(['GET', 'POST'], 'registerSave', [UserController::class, 'register'])->name('registerSave');
+   Route::match(['GET', 'POST'], 'registerSave', [UserController::class, 'register'])->name('registerSave');
 
   Route::view('login', 'login')->name('login');
 Route::match(['GET', 'POST'], 'loginMatch', [UserController::class, 'login'])->name('loginMatch');

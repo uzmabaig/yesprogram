@@ -1,0 +1,2229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400;1,500&display=swap");
+
+:root {
+  --theme-color: #b11f2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+.content-change {
+  display: none;
+}
+.content-change.active {
+  display: block;
+}
+.yes-program-image {
+    position: relative;
+}
+.yes-program-image .background{
+    background-attachment: fixed;
+    background-image: url(../images/Group\ 38.png);
+    background-size: cover;
+    height: 250px;
+}
+.yes-program-image .background h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    height: 250px;
+    overflow: hidden;
+}
+.main-container {
+  display: flex;
+  height: auto;
+  padding: 0px 100px 0px 100px;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.main-container .left-image, .right-image {
+  position: absolute;
+}
+
+.main-container .left-image {
+  left: -50px;
+  top: 30px;
+  transform: rotate(5deg);
+}
+
+.main-container .right-image {
+  top: 40%;
+  right: -30px;
+}
+
+.main-container .left-image img{
+  display: block;
+  width: 100%;
+  max-width: 100px;
+}
+.main-container .right-image img {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+}
+.left-button-pannel {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    padding: 20px 26px 20px 26px; /* Adjust values as needed */
+}
+.left-button-pannel .title h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.left-button-pannel .title h2 span{
+    font-size: 40px;
+    font-weight: 300;
+}
+.left-button-pannel .content-change-button ul{
+    list-style: none;
+    padding: 5px 0px;
+}
+.left-button-pannel .content-change-button ul li{
+    padding: 7px 0px;
+}
+.left-button-pannel .content-change-button ul li button{
+    background-color: #E6AF10;
+    padding: 12px;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #323435;
+    width: 100%;
+    text-align: start;
+    outline: none;
+}
+.left-button-pannel .content-change-button ul li button:hover{
+    background-color: #323435;
+    color: #E6AF10;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button{
+    background-color: #b11f2d;
+    padding: 12px;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    text-align: start;
+    outline: none;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button:hover{
+    background-color: #E6AF10;
+    color: #323435;
+}
+.right-change-content {
+    flex: 3;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px; 
+    overflow: hidden;
+}
+.right-change-content h6{
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #323435;
+    padding: 20px 50px;
+    position: relative;
+}
+.right-change-content h6::after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(to right, #B11F2D 70%, #E6AF10 50%);
+        top: 90%;
+        left: 0;
+        width: 110%;
+        height: 5px;
+}
+.right-change-content h1{
+    color: #B11F2D;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: end;
+    padding: 0px 25px;
+}
+/* introduction start */
+.right-change-content .card-content-change{
+    padding: 10px 50px;
+}
+.right-change-content .card-content-change h4{
+    color: #323435;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.right-change-content .card-content-change p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+}
+/* introduction END */
+/* eligibility criteria start */
+.right-change-content .card-content-change2{
+  padding: 10px 50px 50px 50px;
+}
+.right-change-content .card-content-change2 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change2 .bullet-points{
+  padding: 0px 20px;
+}
+.right-change-content .card-content-change2 .bullet-points ul li p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+}
+.right-change-content .card-content-change2 .bullet-points h3{
+  color: #323435;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: justify;
+}
+/* eligibility criteria end */
+/* age calculator start */
+.right-change-content .card-content-change3{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change3 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change3 .age-calculator-container{
+  max-width: 1000px;
+  margin: 9px auto;
+  padding: 18px 100px 2px 100px;
+  background-color: #323435;
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change3 .age-calculator-container h2{
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+}
+.right-change-content .card-content-change3 .age-calculator-container input{
+  padding: 12px 2px 11px 20px;
+  height: 42%;
+  border: none;
+  outline: none;
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn{
+  padding: 11px 0px 12px 0px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323435;
+  font-weight: 500;
+  margin: 0 auto;
+
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn:hover{
+  text-decoration: none;
+}
+.right-change-content .card-content-change3 .age-calculator-container i{
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+}
+.right-change-content .card-content-change3 .age-calculator-container p{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+}
+.right-change-content .card-content-change3 .age-calculator-container p span{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 500;
+}
+/* age calculator end */
+/* application selection start */
+.right-change-content .card-content-change4{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change4 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change4 .question-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change4 .question-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change4 .question-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 14px;
+  margin: 0px;
+  text-align: justify;
+}
+.right-change-content .card-content-change4 .question-section .card-body p span{
+  color: #323435;
+  font-size: 17px;
+  font-weight: 600;
+}
+.right-change-content .card-content-change4 .important-note p{
+  color: #323435;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change4 .important-note p span{
+  font-size: 15px;
+  color: #B11F2D;
+  font-weight: 600;
+}
+/* application selection end */
+/* parent student start */
+.right-change-content .card-content-change5{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change5 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 14px;;
+}
+.right-change-content .card-content-change5 button{
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  padding: 14px 11px 14px 14px;
+  text-align: center;
+  width: 21%;
+  border-radius: 16px;
+  font-weight: 300;
+  outline: none;
+  border: none;
+  background-color: #323435;
+  transition-duration: 1s;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 button:hover{
+  background-color: #B11F2D;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+/* parent student end */
+/* faqs start */
+.right-change-content .card-content-change6{
+  padding: 10px 50px 50px 50px;
+}
+.right-change-content .card-content-change6 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change6 h5{
+    color: #B11F2D;
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 0px 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 14px;
+  margin: 0px;
+  text-align: justify;
+}
+/* faqs end*/
+/* Styles for small devices (up to 599px) */
+@media (max-width: 460px) {
+  .main-container{
+    display: none;
+  }
+  .yes-program-image{
+    display: none;
+  }
+  .mobile-section .slider-container{
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    padding: 8px;
+    background-color: #323435;
+    margin-top: 85px;
+  }
+  .mobile-section .slider-container .slider-button {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+  .mobile-section .slider-container .slider-button button{
+    padding: 7px 6px;
+    margin-right: 10px;
+    border-radius: 6px;
+    background-color: #E6AF10;
+    border: none;
+    color: #323435;
+    font-size: 10px;
+    font-weight: 500;
+}
+.mobile-main-section{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 18px 17px 18px;
+  gap: 20px;
+  border-radius: 10px;
+}
+.mobile-content-section {
+  max-width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 12px 4px 31px 4px;
+  overflow: hidden;
+}
+
+.mobile-content-section .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 17px 2px 15px;
+}
+
+.mobile-content-section .card-content h3 {
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #323435;
+  line-height: 35px;
+}
+
+.mobile-content-section .card-content h3 span {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #323435;
+}
+
+.mobile-content-section .card-content img {
+  width: 100px;
+}
+
+.mobile-content-section p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #323435;
+  text-align: left;
+}
+
+.mobile-content-section .brand-image {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px;
+
+
+}
+
+.mobile-content-section .brand-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-content-section2 {
+  max-width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 27px 14px 21px 15px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.mobile-content-section2 li {
+  margin: 0;
+  color: #757171;
+  margin-left: 5%;
+}
+.mobile-content-section2 h3{
+  font-size: 14px;
+  padding: 0px 18px;
+}
+.mobile-content-section2 h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.mobile-content-section2 p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #323435;
+  text-align: left;
+}
+
+.mobile-card-change-content {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 12px 0px 0px 0px;
+  overflow: hidden;
+}
+.mobile-card-change-content .criteria-content{
+  padding: 16px 25px 17px 35px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #323435;
+  text-align: left;
+}
+.mobile-card-change-content .criteria-content ul li p{
+  text-align: left;
+}
+.mobile-card-change-content .criteria-content h3{
+  font-size: 14px;
+}
+.mobile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 17px 0px 18px;
+}
+
+.mobile-card h3 {
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #323435;
+  line-height: 35px;
+}
+
+.mobile-card h3 span {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #323435;
+}
+
+.mobile-card img {
+  width: 100px;
+}
+
+.mobile-card-change-content h4 {
+  font-size: 19px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #323435;
+  margin-top: 15px;
+  padding: 0px 19px;
+  text-align: center;
+}
+
+.mobile-card-change-content .age-calculator-container {
+  margin: 9px 0px 0px 0px;
+  padding: 53px 23px 47px 36px;
+  background-color: #323435;
+  color: white;
+  border-radius: 11px;
+}
+
+.mobile-card-change-content .age-calculator-container h2 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.mobile-card-change-content .age-calculator-container a {
+  padding: 15px 15px 15px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  color: #323435;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 10px 40px 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.mobile-card-change-content .age-calculator-container p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.mobile-card-change-content .age-calculator-container p span{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.mobile-card-change-content .age-calculator-container input {
+  padding: 20px 15px 20px 20px;
+  height: 42%;
+  border: none;
+  font-size: 14px;
+  border-radius: 10px;
+  outline: none;
+}
+.mobile-card-change-content .age-calculator-container input::placeholder{
+  font-size: 17px;
+}
+.mobile-card-change-content .content {
+  padding: 13px 38px 13px 39px;
+}
+
+.form-groups {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  padding-right: 40px;
+  /* Adjust to fit the icon inside the input */
+  box-sizing: border-box;
+  /* Ensures padding-right doesn't affect total width */
+}
+
+.fa-calendar {
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
+}
+
+.question-section {
+  margin: 13px 13px 28px 13px;
+}
+
+.question-section .card-header {
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 7px;
+}
+.question-section .card-body{
+  background-color: #EFEFEF;
+  padding: 10px;
+}
+.question-section .card-body p {
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 11px;
+  margin: 0px;
+  text-align: justify;
+}
+.question-section .card-body p span{
+  color: #323435;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0px;
+}
+.important-note {
+  color: #323435;
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 32px;
+}
+.important-note span{
+  color: #B11F2D;
+  font-weight: 500;
+  font-size: 15px;
+}
+.mobile-parent-content {
+  padding: 14px 32px 45px 22px;
+}
+
+.mobile-card-change-content h5 {
+  font-size: 14px;
+  text-align: start;
+  color: #B11F2D;
+  padding: 0px 19px;
+}
+
+.mobile-content-section h5 {
+  font-size: 14px;
+  text-align: start;
+  color: #B11F2D;
+  padding: 0px 19px;
+}
+
+.mobile-parent-content p {
+  font-size: 13px;
+  text-align: start;
+}
+
+.mobile-parent-content button {
+  padding: 11px 19px;
+  margin-right: 10px;
+  border-radius: 6px;
+  background-color: #323435;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.faqs-section {
+  margin: 13px 13px 28px 13px;
+}
+
+.faqs-section h5 {
+  color: #B11F2D;
+  text-align: start;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px;
+  margin: 12px 0px;
+  text-transform: uppercase;
+}
+
+.faqs-section .card-header {
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 7px;
+}
+.faqs-section .card-body{
+  background-color: #EFEFEF;
+  padding: 5px;
+}
+.faqs-section .card-body p {
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+}
+.apply-now-button {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+  width: 100%;
+}
+
+.apply-now-button button {
+  background-color: #B11F2D;
+  border-radius: 9px;
+  text-transform: uppercase;
+  width: 100%;
+  height: 172%;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: 1s;
+}
+}
+
+/* Styles for medium devices (600px to 767px) */
+@media (min-width: 461px) and (max-width: 767px) {
+  .main-container{
+    display: none;
+  }
+  .yes-program-image{
+    display: none;
+  }
+  .slider-container {
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    padding: 15px;
+    background-color: #323435;
+    margin-top: 95px;
+}
+
+.slider-button {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+button{
+    padding: 9px 21px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #E6AF10;
+    border: none;
+    color: #323435;
+
+}
+
+.slider-button:hover {
+    transform: translateX(-10px);
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 17px 39px 17px 39px;
+    gap: 20px;
+    border-radius: 10px;
+}
+.mobile-main-section{
+  margin: 30px;
+}
+.mobile-content-section {
+    max-width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 34px 20px 31px 21px;
+    overflow: hidden;
+}
+
+.mobile-content-section .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 19px 2px 23px;
+}
+
+.mobile-content-section h5 {
+    font-size: 18px;
+    text-align: start;
+    color: #B11F2D;
+    padding: 0px 19px;
+}
+
+.mobile-content-section .card-content h3 {
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #323435;
+    line-height: 48px;
+}
+
+.mobile-content-section .card-content h3 span {
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #323435;
+}
+
+.mobile-content-section .card-content img {
+    width: 100px;
+}
+
+.mobile-content-section p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #323435;
+  text-align: justify;
+}
+
+.mobile-content-section .brand-image {
+    max-width: 1000px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+
+}
+.mobile-content-section .brand-image img {
+    width: 100%;
+    height: 107px;
+}
+
+.mobile-content-section2 {
+    max-width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 38px 39px 37px 39px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.mobile-content-section2 h4 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.mobile-content-section2 h4 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.mobile-content-section2 li {
+    margin: 0;
+    color: #757171;
+    margin-left: 5%;
+}
+
+.mobile-content-section2 p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #323435;
+  text-align: justify;
+}
+.mobile-content-section2 h3 {
+  font-size: 14px;
+  margin: 0px 30px;
+}
+.mobile-card-change-content .criteria-content{
+  font-size: 13px;
+  font-weight: 400;
+  color: #323435;
+  text-align: justify;
+}
+.mobile-card-change-content .criteria-content h3{
+  font-size: 14px;
+}
+.mobile-card-change-content .criteria-content ul{
+  padding: 0px 40px 0px 60px;
+}
+.mobile-card-change-content .criteria-content ul li p{
+  text-align: justify;
+}
+.mobile-card-change-content {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 12px 0px 0px 0px;
+  overflow: hidden;
+}
+
+.mobile-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 38px 2px 45px
+}
+
+.mobile-card-change-content h5 {
+    font-size: 18px;
+    text-align: start;
+    color: #B11F2D;
+    padding: 0px 50px;
+}
+
+.mobile-card h3 {
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #323435;
+    line-height: 48px;
+}
+
+.mobile-card h3 span {
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #323435;
+}
+
+.mobile-card img {
+    width: 100px;
+}
+
+.mobile-card-change-content h4 {
+    text-align: start;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-bottom: 29px;
+    text-transform: uppercase;
+    color: #323435;
+    padding: 0px 45px;
+
+}
+
+.mobile-card-change-content .age-calculator-container {
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 54px 70px 47px 70px;
+    background-color: #5f5f5f;
+    color: white;
+    border-radius: 15px;
+}
+
+.mobile-card-change-content .age-calculator-container h2 {
+    color: #fff;
+    font-size: 31px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.mobile-card-change-content .age-calculator-container a {
+  padding: 18px 0px 18px 0px;
+  background-color: #fff;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323435;
+  font-weight: 500;
+  font-size: 19px;
+  margin: 10px 134px 0px 146px;
+  cursor: pointer;
+}
+.mobile-card-change-content .age-calculator-container a:hover{
+  text-decoration: none;
+}
+
+.mobile-card-change-content .age-calculator-container p {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 400;
+}
+.mobile-card-change-content .age-calculator-container p span{
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+}
+.mobile-card-change-content .age-calculator-container input {
+  padding: 20px 17px 20px 20px;
+  height: 42%;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.mobile-card-change-content .content {
+    padding: 13px 38px 13px 39px;
+}
+
+.form-groups {
+    position: relative;
+}
+
+.form-control {
+    width: 100%;
+    padding-right: 40px;
+    /* Adjust to fit the icon inside the input */
+    box-sizing: border-box;
+    /* Ensures padding-right doesn't affect total width */
+}
+
+.fa-calendar {
+  position: absolute;
+  top: 33%;
+  right: 30px;
+  font-size: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+}
+
+.question-section {
+    margin: 13px 40px 35px 40px;
+}
+
+.question-section .card-header {
+    border: #323435;
+    background-color: #e5e5e5;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 7px;
+}
+
+.question-section .card-body p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.important-note {
+    color: #323435;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 32px;
+}
+
+.mobile-parent-content {
+    padding: 14px 32px 45px 22px;
+}
+
+.mobile-parent-content h5 {
+    font-size: 17px;
+    text-align: end;
+    color: #B11F2D;
+
+}
+
+.mobile-parent-content p {
+    font-size: 17px;
+    text-align: start;
+    padding: 0px 25px;
+}
+
+.mobile-parent-content button {
+    padding: 18px 35px;
+    margin-right: 10px;
+    border-radius: 6px;
+    background-color: #323435;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px 24px;
+}
+
+.faqs-section {
+    margin: 13px 40px 35px 40px;
+}
+
+.faqs-section h5 {
+    color: #B11F2D;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 0px;
+    margin-bottom: 15px;
+}
+
+.faqs-section .card-header {
+    border: #323435;
+    background-color: #e5e5e5;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 13px;
+}
+
+.faqs-section .card-body p {
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+}
+
+.apply-now-button {
+  margin: 30px 0px;
+}
+
+.apply-now-button button {
+  background-color: #B11F2D;
+  border-radius: 9px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 18px;
+  padding: 10px 94px;
+  color: #fff;
+  text-decoration: none;
+  transition: 1s;
+  width: 100%;
+  height: 6vh;
+}
+}
+
+@media (min-width: 768px) and (max-width: 799px){
+  .yes-program-image {
+    position: relative;
+}
+.yes-program-image .background{
+    background-attachment: fixed;
+    background-image: url(../images/Group\ 38.png);
+    background-size: cover;
+    height: 250px;
+}
+.yes-program-image .background h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    height: 250px;
+    overflow: hidden;
+}
+.main-container {
+  display: flex;
+  height: auto;
+  padding: 0px 60px 0px 60px;
+  gap: 20px;
+}
+.left-button-pannel {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    padding: 20px 26px 20px 26px; /* Adjust values as needed */
+}
+.left-button-pannel .title h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.left-button-pannel .title h2 span{
+    font-size: 40px;
+    font-weight: 300;
+}
+.left-button-pannel .content-change-button ul{
+    list-style: none;
+    padding: 5px 0px;
+}
+.left-button-pannel .content-change-button ul li{
+    padding: 7px 0px;
+}
+.left-button-pannel .content-change-button ul li button{
+  background-color: #E6AF10;
+  padding: 12px;
+  border: none;
+  font-size: 10px;
+  font-weight: 500;
+  color: #323435;
+  width: 100%;
+  text-align: start;
+  outline: none;
+}
+.left-button-pannel .content-change-button ul li button:hover{
+    background-color: #323435;
+    color: #E6AF10;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button{
+    background-color: #b11f2d;
+    padding: 12px;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    text-align: start;
+    outline: none;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button:hover{
+    background-color: #E6AF10;
+    color: #323435;
+}
+.right-change-content {
+    flex: 3;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px; 
+    overflow: hidden;
+}
+.right-change-content h6{
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #323435;
+  padding: 20px 20px;
+  position: relative;
+  line-height: 25px;
+}
+.right-change-content h6::after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(to right, #B11F2D 70%, #E6AF10 50%);
+        top: 90%;
+        left: 0;
+        width: 110%;
+        height: 5px;
+}
+.right-change-content h1{
+    color: #B11F2D;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: end;
+    padding: 0px 25px;
+}
+/* introduction start */
+.right-change-content .card-content-change{
+    padding: 10px 20px;
+}
+.right-change-content .card-content-change h4{
+    color: #323435;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.right-change-content .card-content-change p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: justify;
+}
+/* introduction END */
+/* eligibility criteria start */
+.right-change-content .card-content-change2{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change2 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+
+}
+.right-change-content .card-content-change2 .bullet-points{
+  padding: 0px 20px;
+}
+.right-change-content .card-content-change2 .bullet-points ul li p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: justify;
+  margin: 3px;
+}
+.right-change-content .card-content-change2 .bullet-points h3{
+  color: #323435;
+  font-weight: 500;
+  font-size: 11px;
+  text-align: justify;
+}
+/* eligibility criteria end */
+/* age calculator start */
+.right-change-content .card-content-change3{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change3 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change3 .age-calculator-container{
+  max-width: 1000px;
+  margin: 9px auto;
+  padding: 18px 20px 2px 30px;
+  background-color: #323435;
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change3 .age-calculator-container h2{
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 500;
+}
+.right-change-content .card-content-change3 .age-calculator-container input{
+  padding: 12px 0px 11px 8px;
+  height: 42%;
+  border: none;
+  outline: none;
+  font-size: 11px;
+}
+.right-change-content .card-content-change3 .age-calculator-container input::placeholder{
+  font-size: 15px;
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn{
+  padding: 12px 0px 12px 0px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323435;
+  font-weight: 500;
+  margin: 0 auto;
+  font-size: 11px;
+
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn:hover{
+  text-decoration: none;
+}
+.right-change-content .card-content-change3 .age-calculator-container i{
+  position: absolute;
+  top: 26%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+  font-size: 14px;
+}
+.right-change-content .card-content-change3 .age-calculator-container p{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+.right-change-content .card-content-change3 .age-calculator-container p span{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* age calculator end */
+/* application selection start */
+.right-change-content .card-content-change4{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change4 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change4 .question-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 10px;
+  border-radius: 0px;;
+}
+.right-change-content .card-content-change4 .question-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change4 .question-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+.right-change-content .card-content-change4 .question-section .card-body p span{
+  color: #323435;
+  font-size: 17px;
+  font-weight: 600;
+}
+.right-change-content .card-content-change4 .important-note p{
+  color: #323435;
+  font-weight: 500;
+  font-size: 11px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change4 .important-note p span{
+  font-size: 13px;
+  color: #B11F2D;
+  font-weight: 600;
+}
+/* application selection end */
+/* parent student start */
+.right-change-content .card-content-change5{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change5 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change5 p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;;
+}
+.right-change-content .card-content-change5 button{
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  padding: 14px 11px 14px 14px;
+  text-align: center;
+  width: 27%;
+  border-radius: 16px;
+  font-weight: 300;
+  font-size: 11px;
+  outline: none;
+  border: none;
+  background-color: #323435;
+  transition-duration: 1s;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 button:hover{
+  background-color: #B11F2D;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+/* parent student end */
+/* faqs start */
+.right-change-content .card-content-change6{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change6 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change6 h5{
+    color: #B11F2D;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 0px 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+}
+
+@media (min-width: 800px) and (max-width: 921px){
+  .mobile-section{
+    display: none;
+  }
+  .mobile-main-section{
+    display: none;
+  }
+  .yes-program-image {
+    position: relative;
+}
+.yes-program-image .background{
+    background-attachment: fixed;
+    background-image: url(../images/Group\ 38.png);
+    background-size: cover;
+    height: 250px;
+}
+.yes-program-image .background h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    height: 250px;
+    overflow: hidden;
+}
+.main-container {
+  display: flex;
+  height: auto;
+  padding: 0px 60px 0px 60px;
+  gap: 20px;
+}
+.left-button-pannel {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    padding: 20px 26px 20px 26px; /* Adjust values as needed */
+}
+.left-button-pannel .title h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.left-button-pannel .title h2 span{
+    font-size: 40px;
+    font-weight: 300;
+}
+.left-button-pannel .content-change-button ul{
+    list-style: none;
+    padding: 5px 0px;
+}
+.left-button-pannel .content-change-button ul li{
+    padding: 7px 0px;
+}
+.left-button-pannel .content-change-button ul li button{
+  background-color: #E6AF10;
+  padding: 12px;
+  border: none;
+  font-size: 10px;
+  font-weight: 500;
+  color: #323435;
+  width: 100%;
+  text-align: start;
+  outline: none;
+}
+.left-button-pannel .content-change-button ul li button:hover{
+    background-color: #323435;
+    color: #E6AF10;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button{
+    background-color: #b11f2d;
+    padding: 12px;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    text-align: start;
+    outline: none;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button:hover{
+    background-color: #E6AF10;
+    color: #323435;
+}
+.right-change-content {
+    flex: 3;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px; 
+    overflow: hidden;
+}
+.right-change-content h6{
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #323435;
+  padding: 20px 20px;
+  position: relative;
+  line-height: 25px;
+}
+.right-change-content h6::after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(to right, #B11F2D 70%, #E6AF10 50%);
+        top: 90%;
+        left: 0;
+        width: 110%;
+        height: 5px;
+}
+.right-change-content h1{
+    color: #B11F2D;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: end;
+    padding: 0px 25px;
+}
+/* introduction start */
+.right-change-content .card-content-change{
+    padding: 10px 20px;
+}
+.right-change-content .card-content-change h4{
+    color: #323435;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.right-change-content .card-content-change p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: justify;
+}
+/* introduction END */
+/* eligibility criteria start */
+.right-change-content .card-content-change2{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change2 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+
+}
+.right-change-content .card-content-change2 .bullet-points{
+  padding: 0px 20px;
+}
+.right-change-content .card-content-change2 .bullet-points ul li p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: justify;
+}
+.right-change-content .card-content-change2 .bullet-points h3{
+  color: #323435;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: justify;
+}
+/* eligibility criteria end */
+/* age calculator start */
+.right-change-content .card-content-change3{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change3 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change3 .age-calculator-container{
+  max-width: 1000px;
+  margin: 9px auto;
+  padding: 18px 20px 2px 30px;
+  background-color: #323435;
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change3 .age-calculator-container h2{
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.right-change-content .card-content-change3 .age-calculator-container input{
+  padding: 12px 2px 11px 12px;
+  height: 42%;
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+.right-change-content .card-content-change3 .age-calculator-container input::placeholder{
+  font-size: 15px;
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn{
+  padding: 12px 0px 12px 0px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323435;
+  font-weight: 500;
+  margin: 0 auto;
+  font-size: 11px;
+
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn:hover{
+  text-decoration: none;
+}
+.right-change-content .card-content-change3 .age-calculator-container i{
+  position: absolute;
+  top: 26%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+}
+.right-change-content .card-content-change3 .age-calculator-container p{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+.right-change-content .card-content-change3 .age-calculator-container p span{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* age calculator end */
+/* application selection start */
+.right-change-content .card-content-change4{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change4 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change4 .question-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change4 .question-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change4 .question-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+.right-change-content .card-content-change4 .question-section .card-body p span{
+  color: #323435;
+  font-size: 17px;
+  font-weight: 600;
+}
+.right-change-content .card-content-change4 .important-note p{
+  color: #323435;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change4 .important-note p span{
+  font-size: 15px;
+  color: #B11F2D;
+  font-weight: 600;
+}
+/* application selection end */
+/* parent student start */
+.right-change-content .card-content-change5{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change5 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;;
+}
+.right-change-content .card-content-change5 button{
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  padding: 14px 11px 14px 14px;
+  text-align: center;
+  width: 27%;
+  border-radius: 16px;
+  font-weight: 300;
+  font-size: 11px;
+  outline: none;
+  border: none;
+  background-color: #323435;
+  transition-duration: 1s;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 button:hover{
+  background-color: #B11F2D;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+/* parent student end */
+/* faqs start */
+.right-change-content .card-content-change6{
+  padding: 10px 20px;
+}
+.right-change-content .card-content-change6 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.right-change-content .card-content-change6 h5{
+    color: #B11F2D;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 0px 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+}
+
+/* Styles for large devices (768px to 991px) */
+@media (min-width: 920px) and (max-width: 991px) {
+
+.yes-program-image .background{
+    background-attachment: fixed;
+    background-image: url(../images/Group\ 38.png);
+    background-size: cover;
+    height: 250px;
+}
+.yes-program-image .background h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    height: 250px;
+    overflow: hidden;
+}
+.main-container {
+  display: flex;
+  height: auto;
+  padding: 0px 60px 0px 60px;
+  gap: 20px;
+}
+.left-button-pannel {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    padding: 20px 26px 20px 26px; /* Adjust values as needed */
+}
+.left-button-pannel .title h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.left-button-pannel .title h2 span{
+    font-size: 40px;
+    font-weight: 300;
+}
+.left-button-pannel .content-change-button ul{
+    list-style: none;
+    padding: 5px 0px;
+}
+.left-button-pannel .content-change-button ul li{
+    padding: 7px 0px;
+}
+.left-button-pannel .content-change-button ul li button{
+  background-color: #E6AF10;
+  padding: 12px;
+  border: none;
+  font-size: 10px;
+  font-weight: 500;
+  color: #323435;
+  width: 100%;
+  text-align: start;
+  outline: none;
+}
+.left-button-pannel .content-change-button ul li button:hover{
+    background-color: #323435;
+    color: #E6AF10;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button{
+    background-color: #b11f2d;
+    padding: 12px;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    text-align: start;
+    outline: none;
+}
+.left-button-pannel .content-change-button .Guideline-Section li button:hover{
+    background-color: #E6AF10;
+    color: #323435;
+}
+.right-change-content {
+    flex: 3;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px; 
+    overflow: hidden;
+}
+.right-change-content h6{
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #323435;
+  padding: 20px 50px;
+  position: relative;
+  line-height: 25px;
+}
+.right-change-content h6::after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(to right, #B11F2D 70%, #E6AF10 50%);
+        top: 90%;
+        left: 0;
+        width: 110%;
+        height: 5px;
+}
+.right-change-content h1{
+    color: #B11F2D;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: end;
+    padding: 0px 25px;
+}
+/* introduction start */
+.right-change-content .card-content-change{
+    padding: 10px 50px;
+}
+.right-change-content .card-content-change h4{
+    color: #323435;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.right-change-content .card-content-change p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: justify;
+}
+/* introduction END */
+/* eligibility criteria start */
+.right-change-content .card-content-change2{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change2 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change2 .bullet-points{
+  padding: 0px 20px;
+}
+.right-change-content .card-content-change2 .bullet-points ul li p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: justify;
+}
+.right-change-content .card-content-change2 .bullet-points h3{
+  color: #323435;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: justify;
+}
+/* eligibility criteria end */
+/* age calculator start */
+.right-change-content .card-content-change3{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change3 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change3 .age-calculator-container{
+  max-width: 1000px;
+  margin: 9px auto;
+  padding: 18px 40px 2px 60px;
+  background-color: #323435;
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change3 .age-calculator-container h2{
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+}
+.right-change-content .card-content-change3 .age-calculator-container input{
+  padding: 12px 2px 11px 20px;
+  height: 42%;
+  border: none;
+  outline: none;
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn{
+  padding: 12px 0px 12px 0px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323435;
+  font-weight: 500;
+  margin: 0 auto;
+  font-size: 13px;
+
+}
+.right-change-content .card-content-change3 .age-calculator-container #calculateBtn:hover{
+  text-decoration: none;
+}
+.right-change-content .card-content-change3 .age-calculator-container i{
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+}
+.right-change-content .card-content-change3 .age-calculator-container p{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+}
+.right-change-content .card-content-change3 .age-calculator-container p span{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 500;
+}
+/* age calculator end */
+/* application selection start */
+.right-change-content .card-content-change4{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change4 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change4 .question-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change4 .question-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change4 .question-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+.right-change-content .card-content-change4 .question-section .card-body p span{
+  color: #323435;
+  font-size: 17px;
+  font-weight: 600;
+}
+.right-change-content .card-content-change4 .important-note p{
+  color: #323435;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.right-change-content .card-content-change4 .important-note p span{
+  font-size: 15px;
+  color: #B11F2D;
+  font-weight: 600;
+}
+/* application selection end */
+/* parent student start */
+.right-change-content .card-content-change5{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change5 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 p{
+  color: #323435;
+  font-weight: 400;
+  font-size: 13px;;
+}
+.right-change-content .card-content-change5 button{
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  padding: 14px 11px 14px 14px;
+  text-align: center;
+  width: 21%;
+  border-radius: 16px;
+  font-weight: 300;
+  font-size: 10px;
+  outline: none;
+  border: none;
+  background-color: #323435;
+  transition-duration: 1s;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change5 button:hover{
+  background-color: #B11F2D;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+/* parent student end */
+/* faqs start */
+.right-change-content .card-content-change6{
+  padding: 10px 50px;
+}
+.right-change-content .card-content-change6 h4{
+  color: #323435;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.right-change-content .card-content-change6 h5{
+    color: #B11F2D;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 0px 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-header{
+  border: #323435;
+  background-color: #919191;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 0px;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body{
+  background-color: #EFEFEF;
+}
+.right-change-content .card-content-change6 .faqs-section .card-body p{
+  color: #323435;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 13px;
+  margin: 0px;
+  text-align: justify;
+}
+}
+
+/* Styles for extra large devices (992px and up) */
+@media (min-width: 992px) {
+  .mobile-section{
+    display: none;
+  }
+  .mobile-main-section{
+    display: none;
+  }
+}

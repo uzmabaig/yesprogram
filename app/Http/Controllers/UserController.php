@@ -15,12 +15,14 @@ class UserController extends Controller
 
         if ($request->method() === 'POST') {
             $user = $request->validate([
-                'name' => 'required',
+                'firstname' => 'required',
+                'lastname' => 'required',
                 'email' => 'required|email',
-                 'password' => 'required|confirmed'
+                 'password' => 'required'
             ]);
             $user = User::create([
-                'name' => $request->name,
+                'firstname' => $request->firstname,
+                'lastname' => $request->lastname,
                 'email' => $request->email,
                 'password' => bcrypt($request->password),
             ]);
