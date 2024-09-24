@@ -32,3 +32,4 @@ Route::view('yesprogram', 'yesprogram')->name('yesprogram');
 Route::view('contact', 'contact')->name('contact');
 
 Route::match(['GET', 'POST'], 'contact/add', [Contactcontroller::class, 'add'])->name('add.contact');
+Route::match(['GET', 'POST'], 'contact_mail', [Contactcontroller::class, 'contact_mail_send'])->name('mail.contact');

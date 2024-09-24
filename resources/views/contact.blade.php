@@ -7,7 +7,7 @@
 </div>
 <div class="contact-form">
    
-        <form action="{{ route('add.contact')}}"  method="POST">
+        <form action="{{ route('mail.contact')}}"  method="POST">
         @csrf
         <div class="container col-6 mt-4">
             @include('flash-message')

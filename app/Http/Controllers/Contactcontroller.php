@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Mail\ContactMail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class Contactcontroller extends Controller
 {
@@ -33,4 +34,8 @@ class Contactcontroller extends Controller
  
     }
 }
+ public function contact_mail_send(Request $request){
+  Mail::to('abc@gmail.com')->send(new ContactMail($request));
+     return redirect('contact');
+ }
 }

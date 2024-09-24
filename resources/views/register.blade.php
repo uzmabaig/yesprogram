@@ -66,6 +66,7 @@
         </div>
     </div>
 </div>
+@push('scripts')
 <script src="js/login.js"></script>
 <script>
     
@@ -80,4 +81,5 @@
             window.location.href = 'login';
         }
     </script>
+    @endpush
     @endsection
